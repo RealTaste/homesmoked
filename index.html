@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справжній Смак</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="tel:+380935686353"><i class="fas fa-phone-alt"></i> +38 (093) 568-63-53</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://t.me/inna7854" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://www.instagram.com/real_taste25" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@fresh_taste7" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="header-top">
+            <a href="#"><img src="images/logo.png" alt="Справжній Смак" class="logo"></a>
+            <nav>
+                <a href="#about">Секрет нашого смаку</a>
+                <a href="#products">Асортимент</a>
+                <a href="#contact">Контакти</a>
+            </nav>
+        </div>
+        <h1>Справжній Смак</h1>
+        <p>Смак домашнього копчення</p>
+        <div class="header-text">
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h3>Натуральне копчення</h3>
+                    <p>Готуємо м’ясо та рибу власноруч на натуральній тирсі без хімії.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>З любов’ю як для себе</h3>
+                    <p>Домашній підхід до кожного продукту — смак і якість гарантовано.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Замовлення напряму</h3>
+                    <p>Приймаємо замовлення в Instagram, Telegram та телефоном.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h2>Хто ми такі</h2>
+            <p>
+                «Реальний смак» — це маленька сімейна справа, заснована з любові до справжньої їжі.
+                Ми коптимо натуральні продукти без хімії, консервантів і зайвого — лише свіже, домашнє, смачне.
+                Кожне замовлення — як для себе: з турботою, повагою до смаку та відповідальністю перед клієнтом.
+            </p>
+            <em>
+                Наші клієнти — це ті, хто любить по-справжньому: справжній смак, справжніх людей, справжню якість.
+            </em>
+        </div>
+        <div class="about-image">
+            <img src="images/photo.jpg" alt="Власник Реального Смаку">
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Наші смаколики</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="images/product3.png" alt="Копчена курка">
+                <div>
+                    <h3>Копчена курка</h3>
+                    <p>Ніжне філе, аромат натурального диму, соковитий смак. Без зайвого — лише справжнє.</p>
+                    <a href="https://t.me/inna7854" target="_blank" class="order-btn">Замовити</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Філе риби">
+                <div>
+                    <h3>Філе риби</h3>
+                    <p>Свіже філе толстолоба холодного копчення. Власне виробництво. Упакування під замовлення.</p>
+                    <a href="https://t.me/inna7854" target="_blank" class="order-btn">Замовити</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Биток свинячий">
+                <div>
+                    <h3>Биток свинячий</h3>
+                    <p>Ароматний, ніжний і насичений — справжня класика, яку хочеться їсти ще і ще.</p>
+                    <a href="https://t.me/inna7854" target="_blank" class="order-btn">Замовити</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Контакти</h2>
+        <div class="social-icons">
+            <a href="tel:+380935686353"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://t.me/inna7854" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://www.instagram.com/real_taste25" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@fresh_taste7" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Справжній Смак</p>
+    </footer>
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
